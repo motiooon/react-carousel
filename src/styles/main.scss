@@ -1,0 +1,83 @@
+@import "./normalize.css";
+
+$primary-color: green;
+
+h1 {
+  color: $primary-color;
+}
+
+li.task {
+  list-style-type: none;
+
+  label {
+    padding: 0 10px;
+  }
+}
+
+// Carousel styles
+
+.carousel-wrap{
+	// to remove this single rule
+	margin: 100px auto;
+	position: relative;
+}
+
+
+
+// Real carousel styles
+
+.carousel-controls {
+	position: absolute;
+	width: 100%;
+}
+
+.carousel-control{
+	height:38px;
+	display:inline-block;
+	line-height:40px;
+	padding: 0 20px;
+	border:solid 1px #ccc;	
+	border-radius: 3px;
+}
+
+.c-prev-control{
+	float: left;
+	background: url('images/c-arrow-prev.jpg') center center no-repeat #ffffff;
+}
+
+.c-next-control{
+	background: url('images/c-arrow-next.jpg') center center no-repeat #ffffff;	
+	float: right;
+}
+
+
+.carousel-body{
+	background-color: #c2c2c2;	
+	height: 100%;
+	margin: 0 auto;
+	overflow: hidden;
+
+	ol{
+		list-style: none;
+		margin:0;
+		padding:0;
+		height: 100%;
+		transition: margin 0.5s;
+
+		li{
+			float: left;
+			margin-right: 20px;	
+			height: 100%;		
+		}
+
+	}
+}
+
+
+// Product styles - to be replaced with real
+.lp-product{
+	height: 100%;
+	// this will be done vio config perhaps
+	background-color: yellow;
+	text-align: center;
+}
